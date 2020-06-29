@@ -9,8 +9,6 @@ export function activate(context: vscode.ExtensionContext) {
 
     // Use the console to output diagnostic information (console.log) and errors (console.error)
     // This line of code will only be executed once when your extension is activated
-    console.log('Congratulations, your extension "string-template-expander" is now active!');
-
     const languageIds = {
         javascript: ['javascript', 'javascriptreact', 'typescript', 'typescriptreact']
     }
@@ -71,7 +69,6 @@ async function convertJavascriptStringToTemplate(textEditor: vscode.TextEditor) 
     
     const [i, o, quoteType, len] = (doubleQuoteScan[3] > singleQuoteScan[3]) ? doubleQuoteScan : singleQuoteScan
     if (len !== 0) {
-        console.log(i, o)
         let isJSXAttribute =
             currentLine[i - 1] === '='
             && (
@@ -100,7 +97,6 @@ async function convertJavascriptStringToTemplate(textEditor: vscode.TextEditor) 
             );
         });
     }
-    console.log('done');
 }
 
 // this method is called when your extension is deactivated
