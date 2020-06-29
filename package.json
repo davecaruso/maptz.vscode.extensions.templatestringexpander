@@ -1,47 +1,53 @@
 {
-    "name": "template-string-expander",
-    "displayName": "template-string-expander",
-    "description": "Converts string literals into template strings in Javascript, Typescript and CSharp.",
-    "version": "0.0.5",
-    "homepage": "https://raw.githubusercontent.com/maptz/Maptz.VSCode.Extensions.templatestringexpander/master/ReadMe.md",
-    "repository": "https://github.com/maptz/Maptz.VSCode.Extensions.templatestringexpander",
-    "icon": "imgs/Icon.png",
-    "publisher": "maptz",
-    "engines": {
-        "vscode": "^1.25.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:templateStringExpander.convertToTemplateString"
-    ],
-    "main": "./out/extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "templateStringExpander.convertToTemplateString",
-                "title": "Convert to Template String"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "templateStringExpander.convertToTemplateString",
-                "key": "ctrl+m ctrl+2"
-            }
-        ]
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^7.10.9",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.36"
-    }
+	"name": "template-string-expander",
+	"displayName": "template-string-expander",
+	"description": "Converts string literals into template strings in Javascript, Typescript and CSharp.",
+	"version": "0.0.5",
+	"homepage": "https://raw.githubusercontent.com/maptz/Maptz.VSCode.Extensions.templatestringexpander/master/ReadMe.md",
+	"repository": "https://github.com/maptz/Maptz.VSCode.Extensions.templatestringexpander",
+	"icon": "imgs/Icon.png",
+	"publisher": "maptz",
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:templateStringExpander.convertToTemplateString"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "templateStringExpander.convertToTemplateString",
+				"title": "Convert to Template String"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "templateStringExpander.convertToTemplateString",
+				"key": "ctrl+m ctrl+2"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.10.9",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.36"
+	},
+	"__metadata": {
+		"id": "c1cdb9d4-da7f-416c-a90d-ea3d1edfdb5c",
+		"publisherDisplayName": "maptz",
+		"publisherId": "6687261c-62a9-45e8-9369-db5e1f37b28a"
+	},
+	"dependencies": {}
 }
